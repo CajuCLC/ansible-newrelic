@@ -1,0 +1,6 @@
+# ansible-playbook -i hosts.yml newrelic.yml -vvv -k
+
+---
+- hosts: all
+  roles:
+    - { role: newrelic, newrelic_license_key: ab0e123c0bdc8c77cc5922bd67416a080518181 }
